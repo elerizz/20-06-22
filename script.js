@@ -52,16 +52,7 @@ div(4, 2);
 // operation( div, 1 , 0 ) -> Errore: non divisibile per zero :(
 
 const calc = function (operator, num1, num2) {
-  switch (operator) {
-    case sum:
-      return sum(num1, num2);
-    case sub:
-      return sub(num1, num2);
-    case div:
-      return div(num1, num2);
-    case mult:
-      return mult(num1, num2);
-  }
+  return operator(num1, num2);
 };
 
 console.log(calc(sum, 1, 3));
